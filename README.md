@@ -1,9 +1,7 @@
 # Game Analysis
 
-## Part 1: Event parser
-
-Create a game state handler for league of legends that can process multiple types of
-events and update the current status accordingly. The implementation should keep track of
+It's a game state handler for league of legends that can process multiple types of
+events and update the current status accordingly. The implementation keeps track of
 all the variables that represent the state of the game at any given time, and update the
 relevant ones as needed.
 
@@ -47,19 +45,4 @@ Below is a description of each of the event types, and their expected effect:
 * `MATCH_END`: The match ended, and a winner is declared. There are never any events
   after this one.
 
-Watch out for events that are unparsable or have incomplete information. In those cases
-you should do your best to update the gamestate with the information that you have, or
-skip them altogether if they are completely unusable.
 
-To complete part 1 of this challenge, write a parser that can process each event in the
-`data/` directory individually, and update the game state accordingly. You are free to
-create any files and use external libraries if needed.
-
-## Part 2: Testing
-Write tests that verify the behavior of your implementation.
-
-We don't expect full coverage, but there should be enough tests to ensure that the
-processing of events is working as expected. The `samples/` directory contains one event
-of each type in separate files to make this process a bit easier.
-
-While pytest is encouraged, you are allowed to use other frameworks of your choice.
